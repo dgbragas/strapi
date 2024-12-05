@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "design",
+        "coding",
+        "a11y"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    }
+  }
+}
